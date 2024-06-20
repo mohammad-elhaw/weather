@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <a class="brand" href="">
+          <img src="images/logo.png" class="me-2" alt="">
+          <div class="logo-type">
+            <h1 class="site-title">Weather</h1>
+            <small class="site-desc">tagline goes here</small>
+          </div>
+        </a>
+
+        <div class="main-navigation">
+          <ul class="menu list-unstyled mb-0">
+            <li class="menu-item ms-4 active">
+              <a href="">Home</a>
+            </li>
+            <li class="menu-item ms-4">
+              <a href="">News</a>
+            </li>
+            <li class="menu-item ms-4">
+              <a href="">Lives cameras</a>
+            </li>
+            <li class="menu-item ms-4">
+              <a href="">Photos</a>
+            </li>
+            <li class="menu-item ms-4">
+              <a href="">Contact</a>
+            </li>
+          </ul>
+
+          <button class="menu-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-navigation ">
+        <ul class="list-unstyled mb-0">
+          <li class="menu-item p-3 active">
+            <a href="">Home</a>
+          </li>
+          <li class="menu-item p-3">
+            <a href="">News</a>
+          </li>
+          <li class="menu-item p-3">
+            <a href="">Live cameras</a>
+          </li>
+          <li class="menu-item p-3">
+            <a href="">Photos</a>
+          </li>
+          <li class="menu-item p-3">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header> 
+  
+  <div class="content">
+    <div class="container">
+      <form class="find-location position-relative">
+        <input id="search" type="text" placeholder="Find your location...">
+        <input type="button" value="Find">
+      </form>
+    </div>
+  </div>
+
+  
+  <div class="container forecast-container">
+    <div class="row">
+      <div class="col-lg-4 today">
+        <div class="forecast-header d-flex justify-content-between">
+          <div class="day"></div>
+          <div class="date"></div>
+        </div>
+        <div class="forecast-content">
+          <div class="location"></div>
+          <div class="degree">
+            <div class="num"></div>
+            <div class="forecast-icon"></div>
+          </div>
+          <div class="status"></div>
+        </div>
+      </div>
+      <div class="col-lg-4 forecast second">
+        <div class="forecast-header">
+          <div class="day"></div>
+        </div>
+        <div class="forecast-content">
+          <div class="forecast-icon"></div>
+          <div class="degree max-temp"></div>
+          <div class="small min-temp"></div>
+          <div class="status"></div>
+        </div>
+      </div>
+      <div class="col-lg-4 forecast third">
+        <div class="forecast-header">
+          <div class="day"></div>
+        </div>
+
+        <div class="forecast-content">
+          <div class="forecast-icon"></div>
+          <div class="max-temp"></div>
+          <div class="min-temp"></div>
+          <div class="status"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <form action="" class="subscribe-form position-relative mb-5">
+            <input type="text" placeholder="Enter your email to subscribe...">
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+        <div class="col-lg-3 ms-lg-auto">
+          <div class="social-icons pb-2">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

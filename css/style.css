@@ -1,0 +1,259 @@
+a{
+    text-decoration: none;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #bfc1c8;
+    background-color: #1e202b;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.site-header{
+    padding: 50px 0;
+}
+
+.logo-type{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-header .logo-type .site-title{
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.site-header .logo-type .site-desc{
+    font-size: 10px;
+    display: block;
+    color: #bfc1c8;
+}
+
+.main-navigation .menu .menu-item a{
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.main-navigation .menu .menu-item a:hover{
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.main-navigation ul{
+    display: none ;
+}
+
+.main-navigation .menu-item.active a{
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.mobile-navigation .menu-item.active a{
+    color: #009ad8;
+}
+
+.main-navigation .menu-toggle{
+    background-color: transparent;
+    border: solid 2px transparent;
+    color: #fff;
+    border-radius: 40px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.main-navigation .menu-toggle:hover{
+    color: #009ad8;
+    border-color: #009ad8;
+}
+
+.main-navigation .menu-toggle{
+    display: none;
+}
+
+
+.mobile-navigation{
+    height: 0;
+    overflow: hidden;
+}
+
+.mobile-navigation ul{
+    background-color: #262936;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mobile-navigation li{
+    border-bottom: solid 1px #ffffff1a;
+}
+
+.mobile-navigation li a{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 991px) {
+    .main-navigation .menu-toggle{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main-navigation .menu{
+        display: flex;
+    }
+}
+
+/* End Header Section */
+
+/* Start content section */
+
+.content{
+    background-image: url(../images/banner.png);
+    min-height: 350px;
+    padding: 70px 0;
+}
+
+.find-location input[type="text"]{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background-color: #1e202b;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    outline: 0;
+}
+
+.find-location input[type="button"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 44px;
+    border-radius: 30px;
+    background-color: #009ad8;
+    border: none;
+    color: #fff;
+}
+
+
+/* Start forecast */
+
+.forecast-container{
+    background-color: #323544;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.forecast-container .today .forecast-content{
+    text-align: left;
+    padding: 30px 20px;
+}
+
+.forecast-container .forecast .forecast-content{
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+
+.forecast-container .forecast .forecast-content .max-temp{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.forecast-container .forecast .forecast-content .min-temp{
+    font-size: 16px
+}
+
+
+.forecast-header{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.row>*{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.forecast-container .location{
+    font-weight: 400;
+}
+
+.forecast-container .degree .num{
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+}
+
+.forecast-container .status{
+    color: #009ad8;
+    margin: 20px 0;
+}
+
+.forecast-container .forecast:nth-child(even){
+    background-color: #262936;
+}
+
+
+
+/* Start footer section */
+
+.site-footer{
+    background-color: #262936;
+    padding: 50px 0;
+}
+
+.site-footer input[type="text"]{
+    padding: 20px 100px 20px 20px;
+    background-color: #1e202b;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.site-footer input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 10px 30px;
+    border: none;
+    background-color: #009ad8;
+    border-radius: 30px;
+    color: white;
+}
+
+.site-footer .social-icons a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.site-footer .social-icons a:hover{
+    background-color: #009ad8;
+    color: #fff;
+}
